@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CBTC</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('bus.gif') no-repeat bottom center fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+        }
+        .container {
+            text-align: center;
+        }
+        .loading-message {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 13px;
+            overflow: hidden;
+            height: 26px;
+        }
+        .progress {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #7F8C8D 50%, #404647 100%);
+            border-radius: 13px;
+            animation: progress 4s linear forwards;
+        }
+        @keyframes progress {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "index_1.html";
+        }, 4000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="loading-message">Welcome to CBTC</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+</body>
+</html>
